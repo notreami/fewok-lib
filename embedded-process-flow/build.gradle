@@ -1,0 +1,29 @@
+plugins {
+    id 'java'
+}
+
+group 'com.fewok.lib'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile(
+            "org.slf4j:slf4j-api:1.7.25",
+            "com.google.guava:guava:25.1-jre",
+            "com.alibaba:fastjson:1.2.47",
+            "org.apache.commons:commons-collections4:4.1"
+    )
+    compileOnly(
+            "org.projectlombok:lombok:1.16.22"
+    )
+    testCompile(
+            "org.projectlombok:lombok:1.16.22",
+            "org.apache.logging.log4j:log4j-slf4j-impl:2.11.0",
+            "org.testng:testng:6.14.3"
+    )
+}

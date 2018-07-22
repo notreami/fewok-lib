@@ -1,0 +1,3 @@
+rootProject.name = 'fewok-lib'
+include 'embedded-process-flow'
+
